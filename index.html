@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pelota que rebota</title>
+    <title>PELOTA QUE REBOTA Y SE ALOCA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
-    <script src="sketch.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+        canvas {
+            display: block;
+        }
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            z-index: 10;
+            pointer-events: none;
+            font-family: 'Press Start 2P', monospace;
+            font-size: clamp(10px, 3.2vw, 44px);
+            white-space: nowrap;
+            text-align: center;
+            background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff, #ff00ff, #ff0000);
+            background-size: 200% auto;
+            background-position: 0% center;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            animation: rgb 3s linear infinite;
+        }
+        @keyframes rgb {
+            to { background-position: 200% center; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Pelota que rebota</h1>
+    <h1>PELOTA QUE REBOTA Y SE ALOCA</h1>
 </body>
 </html>
